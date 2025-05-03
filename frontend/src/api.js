@@ -4,7 +4,7 @@ import axios from "axios";
 import { ACCESS_TOKEN } from "./constants";
 
 const api = axios.create({
-    baseURL: import.meta.env.ENV_API_URL, // this allow us import anything that is specified in the environment, our BE server
+    baseURL: import.meta.env.VITE_API_URL, // this allow us import anything that is specified in the environment, our BE server
 });
 
 api.interceptors.request.use(

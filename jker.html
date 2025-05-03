@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Barevná paleta náhled</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F8F9FB;
+      padding: 40px;
+      color: #1C1C1E;
+    }
+
+    .palette {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .color-box {
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .text-box {
+      color: #1C1C1E;
+      background-color: #fff;
+      border: 1px solid #E0E0E0;
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    .primary { background-color: #6883F9; }
+    .primary-hover { background-color: #5772E8; }
+    .secondary { background-color: #F0F2FF; color: #1C1C1E; }
+    .success { background-color: #4CAF50; }
+    .danger { background-color: #E53935; }
+    .bg { background-color: #F8F9FB; color: #1C1C1E; }
+    .text-main { background-color: #1C1C1E; }
+    .text-secondary { background-color: #6B7280; }
+    .border { background-color: #E0E0E0; color: #1C1C1E; }
+  </style>
+</head>
+<body>
+  <h1>Barevná paleta pro web</h1>
+  <div class="palette">
+    <div class="color-box primary">#6883F9<br>Primární</div>
+    <div class="color-box primary-hover">#5772E8<br>Primární Hover</div>
+    <div class="color-box secondary">#F0F2FF<br>Sekundární</div>
+    <div class="color-box success">#4CAF50<br>Success</div>
+    <div class="color-box danger">#E53935<br>Danger</div>
+    <div class="color-box bg">#F8F9FB<br>Pozadí</div>
+    <div class="color-box text-main">#1C1C1E<br>Text hlavní</div>
+    <div class="color-box text-secondary">#6B7280<br>Text sekundární</div>
+    <div class="color-box border">#E0E0E0<br>Border</div>
+  </div>
+</body>
+</html>
